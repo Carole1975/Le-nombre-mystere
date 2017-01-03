@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  
+
+  <head>
+
+    <meta charset="utf-8">
+	<title>Le nombre mystère</title>
+
+  </head>
+
+
+<body>
+
+  <script src="../js/nombre mystère.js"></script>
+  
+
+   <p>
+   	 <script type="text/javascript">
+   	 	
+   	 	var nombremystère = Math.floor(Math.random()*10);
+
+   	 	do{
+		var nombreEntre = prompt("Choisissez un nombre compris entre 0 et 9 : ","");
+
+		if (nombreEntre > nombremystère)
+		{
+			prompt("C'est plus.");
+		}
+		else if (nombreEntre < nombremystère)
+		{
+			prompt("C'est moins.");
+		}
+        else 
+		{
+			prompt("Bravo, vous avez trouvé le nombre mystère!!");
+		}
+ 
+	}while (nombreEntre != nombremystère);
+
+   	 </script>
+   </p>
+
+    </body>
+</html>
